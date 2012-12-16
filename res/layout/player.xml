@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+	<ImageView 
+		android:id="@+id/MainBackgroundImg" 
+		android:src="@drawable/shine_green_player" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+	</ImageView>
+	
+	<ImageView
+		android:id="@+id/AccelerometerGraph"
+		android:layout_width="wrap_content"
+		android:layout_height="100dp"
+		android:src="@drawable/graph_example" 
+		android:background="#99eeeeee">
+	</ImageView>
+	
+	<LinearLayout
+		android:id="@+id/BpmBar"
+		android:layout_width="fill_parent"
+		android:layout_height="20dp"
+		android:layout_below="@+id/AccelerometerGraph"
+		android:background="#8dc63f">
+		
+		<TextView
+			android:id="@+id/AverageBPM"
+			android:text="Average BPM: "
+			android:textColor="#000000"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/AverageBPMNum"
+			android:text="120"
+			android:textColor="#000000"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/CurrentBPM"
+			android:text="Current BPM: "
+			android:textColor="#000000"
+			android:layout_marginLeft="50dp"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/CurrentBPMNum"
+			android:text="120"
+			android:textColor="#000000"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent">
+		</TextView>
+	</LinearLayout>
+	
+	<RelativeLayout 
+		android:id="@+id/AlbumInfo"
+		android:layout_height="200dp" 
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/BpmBar">
+	
+			<TextView 
+				style="@style/PlayerText"
+				android:id="@+id/playerTitle"
+				android:text="@+id/SongTitle"
+				android:layout_alignRight="@+id/AlbumInfo"
+				android:layout_marginTop="20dp"
+				android:layout_marginRight="30dp">
+			</TextView>
+			
+			<TextView 
+				style="@style/PlayerText"
+				android:id="@+id/playerArtist"
+				android:text="@+id/SongArtist"
+				android:layout_below="@+id/playerTitle">
+			</TextView>
+			
+			<TextView 
+				style="@style/PlayerText"
+				android:id="@+id/playerTempo"
+				android:text="@+id/playerBPM"
+				android:layout_below="@+id/playerArtist">
+			</TextView>
+	</RelativeLayout>
+
+	<LinearLayout 
+		android:id="@+id/PlayerControl"
+		android:layout_width="fill_parent" 
+		android:layout_height="60dp"
+		android:layout_below="@+id/AlbumInfo"
+		android:background="#70000000"
+		android:layout_centerHorizontal="true"
+		android:paddingTop="10dp">
+		
+		<Button 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="50dp"
+			android:id="@+id/playerBack"
+			android:background="@drawable/previous_track" 
+			android:src="@drawable/previous_track">
+		</Button>
+		
+		<Button 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="34dp"
+			android:id="@+id/playerPausePlay" 
+			android:background="@drawable/pause" 
+			android:src="@drawable/pause">
+		</Button>
+		
+		<Button 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="34dp"
+			android:id="@+id/playerNext" 
+			android:background="@drawable/next_track" 
+			android:src="@drawable/next_track">
+		</Button>
+	</LinearLayout>
+	
+</RelativeLayout>

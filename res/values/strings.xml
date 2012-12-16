@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RunningDJ</string>
+	<color name="Grey">#CCCCCC</color>
+	<string name="playerBack">Back</string>
+	<string name="playerPlayPause">PlayPause</string>
+	<string name="playerNext">Next</string>
+	<string name="logoInstructions">Tap the RunningDJ logo above to begin!</string>
+	<string name="startRunning">Starting Running!</string>
+	<string name="measuringBPM">Measuring BPM ...</string>
+	<string name="cancel">Cancel</string>
+	<string name="setMyOwnPace">Set My Own Pace</string>
+	<string name="TEMPO_STROLL">Stroll</string>
+	<string name="TEMPO_WALK">Walk</string>
+	<string name="TEMPO_LIGHT_JOG">Light Jog</string>
+	<string name="TEMPO_JOG">Jog</string>
+	<string name="TEMPO_RUN">Run</string>
+	<string name="TEMPO_SPRINT">Sprint</string>
+	<string name="TEMPO_UNKNOWN">Unknown</string>
+	
+</resources>

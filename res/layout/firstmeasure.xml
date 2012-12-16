@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+	<ImageView 
+		android:id="@+id/MainBackgroundImg" 
+		android:src="@drawable/shine_green_main" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+	</ImageView>
+	
+	<ImageButton 
+		android:id="@+id/RunningManLogo2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="110dp" 
+		android:background="@drawable/running_man_logo" 
+		android:src="@drawable/running_man_logo"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageButton>
+	
+	<TextView 
+		style="@style/LogoText"
+		android:id="@+id/StartRunning"
+		android:layout_below="@+id/RunningManLogo2" 
+		android:layout_marginTop="20dp" 
+		android:text="@string/startRunning">
+	</TextView>
+	
+	<TextView 
+		style="@style/LogoText"
+		android:id="@+id/MeasuringBPM"
+		android:layout_below="@+id/StartRunning" 
+		android:text="@string/measuringBPM" >
+	</TextView>
+	
+	<ProgressBar 
+		android:layout_below="@+id/MeasuringBPM" 
+		android:layout_height="wrap_content" 
+		android:layout_width="270dp"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/MeasuringProgressBar"
+		style="?android:attr/progressBarStyleHorizontal">
+	</ProgressBar>
+	
+	<Button 
+		android:id="@+id/MeasuringCancel" 
+		android:layout_below="@+id/MeasuringBPM" 
+		android:layout_height="wrap_content"
+		android:layout_width="270dp"
+		android:layout_marginTop="80dp"
+		android:layout_centerHorizontal="true" 
+		android:text="@string/cancel" >
+	</Button>
+	
+	<TextView
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/x" 
+		android:text="X movement" 
+		android:textColor="#000000">
+	</TextView>
+
+	<TextView 
+		android:layout_below="@+id/x" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/y" 
+		android:text="Y movement"
+		android:textColor="#000000" >
+	</TextView>
+	
+	<TextView 
+		android:layout_below="@+id/y" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/z" 
+		android:text="Z movement"
+		android:textColor="#000000">
+	</TextView>
+	
+	<TextView 
+		android:layout_below="@+id/z" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/PeakCount" 
+		android:text="Z movement"
+		android:textColor="#000000">
+	</TextView>
+
+
+</RelativeLayout>
